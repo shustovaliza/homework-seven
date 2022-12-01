@@ -1,0 +1,237 @@
+@font-face {
+    font-family: 'Montserrat Regular';
+    font-style: Regular;
+    src: local('Montserrat Regular'),
+        url(fonts/Montserrat-Regular.woff2) format('woff2'),
+        url(fonts/Montserrat-Regular.woff) format('woff'),
+        url(fonts/Montserrat-Regular.ttf) format('ttf'),
+        url(fonts/Montserrat-Regular.eot) format('eot');
+}
+
+@font-face {
+    font-family: 'Montserrat Bold';
+    font-style: Bold;
+    src: local('Montserrat Bold'),
+        url(fonts/Montserrat-Bold.woff2) format('woff2'),
+        url(fonts/Montserrat-Bold.woff) format('woff'),
+        url(fonts/Montserrat-Bold.ttf) format('ttf'),
+        url(fonts/Montserrat-Bold.eot) format('eot');
+}
+
+@font-face {
+    font-family: 'Montserrat Black';
+    font-style: Black;
+    src: local('Montserrat Black'),
+        url(fonts/Montserrat-Black.woff2) format('woff2'),
+        url(fonts/Montserrat-Black.woff) format('woff'),
+        url(fonts/Montserrat-Black.ttf) format('ttf'),
+        url(fonts/Montserrat-Black.eot) format('eot');
+}
+
+@font-face {
+    font-family: 'Spectral SC Light';
+    font-style: Light;
+    src: local('Spectral SC Light'),
+        url(fonts/SpectralSC-Light.woff2) format('woff2'),
+        url(fonts/SpectralSC-Light.woff) format('woff'),
+        url(fonts/SpectralSC-Light.ttf) format('ttf'),
+        url(fonts/SpectralSC-Light.eot) format('eot');
+}
+
+@font-face {
+    font-family: 'Spectral SC SemiBold';
+    font-style: SemiBold;
+    src: local('Spectral SC SemiBold'),
+        url(fonts/SpectralSC-SemiBold.woff2) format('woff2'),
+        url(fonts/SpectralSC-SemiBold.woff) format('woff'),
+        url(fonts/SpectralSC-SemiBold.ttf) format('ttf'),
+        url(fonts/SpectralSC-SemiBold.eot) format('eot');
+}
+
+body {
+    width: 1604px;
+}
+.first-block {
+    height: 560px;
+    background-image: url(images/background.svg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-block__form-wrap {
+    width: 808px;
+    height: 351px;
+    background: #FBF7F6;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.first-block__form {
+    width: 324px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 31px;
+    margin-left: 40px;
+}
+
+.first-block__form__title {
+    height: 54px;
+    font-family: 'Montserrat Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    color: #371030;
+}
+
+.inputs-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 17px;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #371030;
+    background-color: #FBF7F6;
+    font-family: 'Montserrat Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    height: 30px;
+}
+
+.first-block__input::-webkit-input-placeholder {
+    color: #371030;
+}
+
+.short {
+    width: 144px;
+}
+
+.long {
+    margin-top: 21px;
+}
+
+.first-block__button {
+    margin-top: 23px;
+    width: 324px;
+    height: 55px;
+    background: #FFB0BA;
+    border: none;
+    box-shadow: 3px 3px 0px 3px #DE8E98;
+    border-radius: 100px;
+    font-family: 'Montserrat Black';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    color: #9A3C48;
+}
+
+.first-block__form-image {
+    border-radius: 0 15px 15px 0;
+}
+
+.first-block-image {
+    width: 495.06px;
+    height: 495.06px;
+    position: absolute;
+    z-index: 1;
+    left: 133px;
+    top: -120px;
+}
+
+.second-block {
+    height: 327px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.background-text {
+    font-family: 'Spectral SC Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 245.936px;
+    text-transform: uppercase;
+    color: rgba(94, 92, 90, 0.03);
+    position: absolute;
+    left: 0px;
+    top: -63px;
+    z-index: 1;
+
+}
+
+.second-block__form {
+    z-index: 2;
+}
+
+.second-block__form-title {
+    font-family: 'Spectral SC Semibold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 43px;
+    text-transform: uppercase;
+    color: #424242;
+    display: flex;
+    justify-content: center;
+}
+
+.second-block__inputs-wrap {
+    margin-top: 64px;
+    width: 649px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.second-block__input {
+    width: 195px;
+    height: 50px;
+    border: 1px solid #BDBDBD;
+    border-radius: 46px;
+    background: transparent;
+    box-sizing: border-box;
+    padding: 0 32px;
+}
+
+
+.button {
+    font-family: 'Spectral SC SemiBold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    background: linear-gradient(102.48deg, #976464 -29.03%, #CFA5A5 97.75%);
+    color: #FFFFFF;
+    position: relative;
+    border: none;
+}
+
+.button::after {
+    position: absolute;
+    content: "*нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности";
+    font-family: 'Montserrat Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140.2%;
+    width: 241px;
+    height: 34px;
+    color: #525252;
+    text-transform: lowercase;
+    left: 0px;
+    top: 57px;
+}
